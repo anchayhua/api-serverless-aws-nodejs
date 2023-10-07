@@ -1,19 +1,15 @@
 service: api-serverless-aws-nodejs
-# app and org for use with dashboard.serverless.com
-#app: your-app-name
-#org: your-org-name
 
-# You can pin your service to only deploy with a specific Serverless version
-# Check out our docs for more details
 frameworkVersion: "3"
+
+# plugins:
+#   - serverless-offline
 
 provider:
   name: aws
   runtime: nodejs18.x
-
-# you can overwrite defaults here
-#  stage: dev
-#  region: us-east-1
+  stage: dev
+  region: us-east-1
 
 # you can add statements to the Lambda function's IAM Role here
 #  iam:
